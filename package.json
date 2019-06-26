@@ -1,0 +1,53 @@
+{
+  "name": "aditirajagopal-v5",
+  "private": true,
+  "description": "Revamped, redesigned",
+  "version": "0.1.0",
+  "author": "Aditi Rajagopal <ar5vt@virginia.edu>",
+  "dependencies": {
+    "gatsby": "^2.9.11",
+    "gatsby-image": "^2.1.4",
+    "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-offline": "^2.1.3",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sharp": "^2.1.9",
+    "gatsby-source-filesystem": "^2.0.43",
+    "gatsby-transformer-sharp": "^2.1.21",
+    "gatsby-plugin-postcss": "^2.0.0",
+    "postcss-browser-reporter": "^0.5.0",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.0",
+    "postcss-reporter": "^6.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "tachyons-cli": "^1.3.2"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "tachyons": "^4.11.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "css": "tachyons src/components/app.css > src/index.css --minify",
+    "prestart": "npm run css",
+    "prebuild": "npm run css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
