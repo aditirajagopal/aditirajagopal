@@ -29,10 +29,11 @@ const Layout = ({ children }) => {
           padding: `3 rem`,
         }}
       >
-        <a className="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l fw9 logo__cursor" href="#" title="Home">
+        <a className="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l fw9 logo__cursor" href="/" title="Home">
           > $ cd /home/
         </a>
         <div className="db dtc-l v-mid w-100 w-75-l tc tr-l">
+          <Link className="link dim dark-gray f6 f5-l dib mr3 mr4-l" to="/about" title="About">me</Link>
         </div>
       </nav>
       <div
