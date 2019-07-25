@@ -34,6 +34,7 @@ const Layout = ({ children }) => {
         </a>
         <div className="db dtc-l v-mid w-100 w-75-l tc tr-l">
           <Link className="link dim dark-gray f6 f5-l dib mr3 mr4-l" to="/about" title="About">me</Link>
+          <Link className="link dim dark-gray f6 f5-l dib mr3 mr4-l" to="/now" title="Now">now</Link>
         </div>
       </nav>
       <div

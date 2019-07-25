@@ -52,17 +52,17 @@ const IndexPage = () => (
         <div className="fn fl-ns">
         <b class="db f4 mb1 lh-copy ba bl-0 bt-0 br-0 bw-3 b--black-3 moon-gray">Main focus:</b>
           <div className="flex pa2 dark-gray">
-            <span className="w2">🚗</span>
-            <span className="f6 lh-title ml3">Moving to Charlottesville, VA</span>
+            <span className="w2">💻</span>
+            <span className="f6 lh-title ml3"><a href="https://github.com/UVA-DSI/2019-bootcamp/">Data Science Bootcamp</a></span>
           </div>
           <div className="flex pa2 dark-gray">
-            <span className="w2">💻</span>
-            <span className="f6 lh-title ml3 pl2">Coursework: Business Fundamentals, Marketing Analytics, CDWhy</span>
+            <span className="w2">🛠</span>
+            <span className="f6 lh-title ml3 pl2">Coursework: Business Fundamentals, Marketing Analytics, <a href="https://news.darden.virginia.edu/2019/05/31/career-development-center-why-finding/">CDWhy</a></span>
           </div>
         <b class="db f4 mb1 lh-copy ba bl-0 bt-0 br-0 bw-3 b--black-3 moon-gray">Side project & initiatives</b>
           <div className="flex pa3 dark-gray">
             <span className="w2">🛠</span>
-            <span className="f6 lh-title ml3">TBD</span>
+            <span className="f6 lh-title ml3"><a href="https://github.com/aditirajagopal/aditirajagopal/blob/master/README.md">Update personal website</a></span>
           </div>
         </div>
         <footer class="tc-l">
