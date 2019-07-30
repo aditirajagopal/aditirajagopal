@@ -5,9 +5,10 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { Fragment } from "react"
 import PropTypes from "prop-types"
 import { Link, useStaticQuery, graphql } from "gatsby"
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import "./layout.css"
 import "./app.css"
 
@@ -34,7 +35,25 @@ const Layout = ({ children }) => {
         </a>
         <div className="db dtc-l v-mid w-100 w-75-l tc tr-l">
           <Link className="link dim dark-gray f6 f5-l dib mr3 mr4-l" to="/about" title="About">me</Link>
+          <Link className="link dim dark-gray f6 f5-l dib mr3 mr4-l" to="/portfolio" title="Portfolio">portfolio</Link>
           <Link className="link dim dark-gray f6 f5-l dib mr3 mr4-l" to="/now" title="Now">now</Link>
+          <ThemeToggler> 
+        {({ theme, toggleTheme }) => {
+          const iconClass =
+            theme === 'light' ? "🌙" : "☀️"
+          return (
+            <div>
+              <i
+                value={iconClass}
+                onClick={() => {
+                  const nextTheme = theme === 'light' ? 'dark' : 'light'
+                  toggleTheme(nextTheme)
+                }}
+              />
+            </div>
+          )
+        }}
+      </ThemeToggler>
         </div>
       </nav>
       <div
