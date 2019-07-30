@@ -87,7 +87,7 @@ const getPortfolioTile = (title, date, link) => {
 }
 const PortfolioHome = (props) => (
   <Layout>
-    <SEO title="Now" />
+    <SEO title="Portfolio" />
     <main className="cf pa2">
         <div className="fl w-100 w-third-ns ph2">
           {getPortfolioTile("Spaceman Spiff Alien Invasion", "Commissioned - 2019, 4ftx5ft", props.data.spaceman_spiff.childImageSharp.fluid)}
