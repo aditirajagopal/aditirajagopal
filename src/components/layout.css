@@ -4,10 +4,30 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
+/* 
+  --bg: white;
+  --textNormal: #222;
+  --textTitle: #222;
+  --textLink: blue;
+  --hr: hsla(0, 0%, 0%, 0.2); */
+
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: var(--bg); */
 }
+
+/* body.dark {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+
+  --bg: darkslategray;
+  --textNormal: rgba(255, 255, 255, 0.88);
+  --textTitle: white;
+  --textLink: yellow;
+  --hr: hsla(0, 0%, 100%, 0.2);
+} */
+
 article,
 aside,
 details,
@@ -657,6 +677,20 @@ pre tt:after {
   100% { opacity: 1.0; }
 }
 
+.portfolioDetails {
+  height: 96%;
+  z-index: 0 !important;
+  background-color: transparent;
+}
+.portfolioDetails:hover {
+  opacity:1;
+  z-index: 555555 !important;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.portfolioImage:hover {
+  z-index: -1 !important;
+}
 /*. {
     display: inline-block;
     width: 10px;

@@ -1,10 +1,10 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Image from "../components/image"
+import "../components/layout.css"
 
 export const fluidImage = graphql`
 fragment fluidImage on File {
@@ -19,89 +19,100 @@ fragment fluidImage on File {
 export const pageQuery = graphql`
   query {
     minnesota_birch: file(relativePath: { eq: "minnesota_birch.jpg" }) {
-      ...fluidImage
-    }
+       ...fluidImage, publicURL }
     spaceman_spiff: file(relativePath: { eq: "spaceman_spiff.jpg" }) {
-      ...fluidImage
+      ...fluidImage, publicURL
     }
     outerspace_man: file(relativePath: { eq: "outerspace_man.jpg" }) {
-      ...fluidImage
+      ...fluidImage, publicURL
     }
     hail_to_the_chip: file(relativePath: { eq: "hailtothechip.PNG" }) {
-      ...fluidImage
+      ...fluidImage, publicURL
     }
     stacy_for_wbsb: file(relativePath: { eq: "stacyforWBSB.PNG" }) {
-      ...fluidImage
+      ...fluidImage, publicURL
     }
     sgbrickman_flyer: file(relativePath: { eq: "sgbrickman_flyer.png" }) {
-      ...fluidImage
+      ...fluidImage, publicURL
     }
     mrengineer: file(relativePath: { eq: "mrengineer.png" }) {
-      ...fluidImage
+      ...fluidImage, publicURL
     }
     tangles: file(relativePath: { eq: "tangles.png" }) {
-      ...fluidImage
+      ...fluidImage, publicURL
     }
     psyscream: file(relativePath: { eq: "psyscream.jpg" }) {
-      ...fluidImage
+      ...fluidImage, publicURL
     }
     mnNice: file(relativePath: { eq: "mnNice.jpg" }) {
-      ...fluidImage
+      ...fluidImage, publicURL
     }
     mgolights: file(relativePath: { eq: "mgolights.jpg" }) {
-      ...fluidImage
+      ...fluidImage, publicURL
     }
     snoopy: file(relativePath: { eq: "snoopy.jpg" }) {
-      ...fluidImage
+      ...fluidImage, publicURL
     }
     teaNcake: file(relativePath: { eq: "teaNcake.jpg" }) {
-      ...fluidImage
+      ...fluidImage, publicURL
     }
     thewall: file(relativePath: { eq: "thewall.JPG" }) {
-      ...fluidImage
+      ...fluidImage, publicURL
     }
     posters: file(relativePath: { eq: "posters.JPG" }) {
-      ...fluidImage
+      ...fluidImage, publicURL
     }
     paintnight: file(relativePath: { eq: "paintnight.JPG" }) {
-      ...fluidImage
+      ...fluidImage, publicURL
     }
     notebooks: file(relativePath: { eq: "notebooks.JPG" }) {
-      ...fluidImage
+      ...fluidImage, publicURL
     }
     multitudes: file(relativePath: { eq: "multitudes.JPG" }) {
-      ...fluidImage
+      ...fluidImage, publicURL
     }
   }
 `
 
+const getPortfolioTile = (title, date, link) => {
+  return (
+    <div className="pv2 grow db no-underline black relative">
+      <div className="portfolioDetails white dtc v-mid w-100 child pa5 absolute tc">
+        <h3 className="f4 f4-ns measure-narrow">{title}</h3>
+        <time className="f7 f7-ns ttu tracked">{date}</time>
+      </div>
+      <Img className="db w-100 portfolioImage" fluid={link} />
+    </div>
+  )
+}
 const PortfolioHome = (props) => (
   <Layout>
     <SEO title="Now" />
     <main className="cf pa2">
         <div className="fl w-100 w-third-ns ph2">
-          <a href="" className="pv2 grow db no-underline black"><Img className="db w-100" fluid={props.data.spaceman_spiff.childImageSharp.fluid} /></a>
-          <a href="" className="pv2 grow db no-underline black"><Img className="db w-100" fluid={props.data.tangles.childImageSharp.fluid} /></a>
-          <a href="" className="pv2 grow db no-underline black"><Img className="db w-100" fluid={props.data.psyscream.childImageSharp.fluid} /></a>
-          <a href="" className="pv2 grow db no-underline black"><Img className="db w-100" fluid={props.data.mgolights.childImageSharp.fluid} /></a>
-          <a href="" className="pv2 grow db no-underline black"><Img className="db w-100" fluid={props.data.multitudes.childImageSharp.fluid} /></a>
-          <a href="" className="pv2 grow db no-underline black"><Img className="db w-100" fluid={props.data.posters.childImageSharp.fluid} /></a>
+          {getPortfolioTile("Spaceman Spiff Alien Invasion", "Commissioned - 2019, 4ftx5ft", props.data.spaceman_spiff.childImageSharp.fluid)}
+          {getPortfolioTile("Tangles Hair Extensions and More Brand Redesign", "Commissioned - 2017", props.data.tangles.childImageSharp.fluid)}
+          {getPortfolioTile("PsyScream", "Gift - 2016", props.data.psyscream.childImageSharp.fluid)}
+          {getPortfolioTile("MGoLights", "Mixed Media - 2018", props.data.mgolights.childImageSharp.fluid)}
+          {getPortfolioTile("C&H Fall, Astro Quad", "2017", props.data.multitudes.childImageSharp.fluid)}
+          {getPortfolioTile("Snoopy Beach Day", "Gift - 2017", props.data.snoopy.childImageSharp.fluid)}
+
         </div>
         <div className="fl w-50 w-third-ns ph2">
-          <a href="" className="pv2 grow db no-underline black"><Img className="db w-100" fluid={props.data.hail_to_the_chip.childImageSharp.fluid} /></a>
-          <a href="" className="pv2 grow db no-underline black"><Img className="db w-100" fluid={props.data.thewall.childImageSharp.fluid} /></a>
-          <a href="" className="pv2 grow db no-underline black"><Img className="db w-100" fluid={props.data.minnesota_birch.childImageSharp.fluid} /></a>
-          <a href="" className="pv2 grow db no-underline black"><Img className="db w-100" fluid={props.data.notebooks.childImageSharp.fluid} /></a>
-          <a href="" className="pv2 grow db no-underline black"><Img className="db w-100" fluid={props.data.teaNcake.childImageSharp.fluid} /></a>
+          {getPortfolioTile("Jillian's Bakery", "Brand Design - 2015", props.data.hail_to_the_chip.childImageSharp.fluid)}
+          {getPortfolioTile("Castle Black", "Commissioned - 2019 4ftx5ft", props.data.thewall.childImageSharp.fluid)}
+          {getPortfolioTile("Minnesota Birch", "Commissioned - 2019", props.data.minnesota_birch.childImageSharp.fluid)}
+          {getPortfolioTile("Notebooks", "Mixed Media - 2014", props.data.notebooks.childImageSharp.fluid)}
+          {getPortfolioTile("Office Posters", "2014", props.data.posters.childImageSharp.fluid)}
+          {getPortfolioTile("Tea and Cake", "Workshop - 2015", props.data.teaNcake.childImageSharp.fluid)}
         </div>
         <div className="fl w-50 w-third-ns ph2">
-          <a href="" className="no-underline pv2 grow db"><Img className="db w-100" fluid={props.data.outerspace_man.childImageSharp.fluid} /></a>
-          <a href="" className="pv2 grow db no-underline black"><Img className="db w-100" fluid={props.data.stacy_for_wbsb.childImageSharp.fluid} /></a>
-          <a href="" className="pv2 grow db no-underline black"><Img className="db w-100" fluid={props.data.sgbrickman_flyer.childImageSharp.fluid} /></a>
-          <a href="" className="pv2 grow db no-underline black"><Img className="db w-100" fluid={props.data.mrengineer.childImageSharp.fluid} /></a>
-          <a href="" className="pv2 grow db no-underline black"><Img className="db w-100" fluid={props.data.mnNice.childImageSharp.fluid} /></a>
-          <a href="" className="pv2 grow db no-underline black"><Img className="db w-100" fluid={props.data.paintnight.childImageSharp.fluid} /></a>
-          <a href="" className="pv2 grow db no-underline black"><Img className="db w-100" fluid={props.data.snoopy.childImageSharp.fluid} /></a>
+          {getPortfolioTile("Cross over in Space", "Commissioned - 2019 4ftx5ft", props.data.outerspace_man.childImageSharp.fluid)}
+          {getPortfolioTile("Stacy for WBSB", "Brand Design - 2014", props.data.stacy_for_wbsb.childImageSharp.fluid)}
+          {getPortfolioTile("Stacy for WBSB", "Print Design - 2014", props.data.sgbrickman_flyer.childImageSharp.fluid)}
+          {getPortfolioTile("Mr. Engineer 2012", "Brand Design - 2011", props.data.mrengineer.childImageSharp.fluid)}
+          {getPortfolioTile("Minnesota Nice", "Wood Burning - 2017", props.data.mnNice.childImageSharp.fluid)}
+          {getPortfolioTile("Paint Night", "Workshop - 2016", props.data.paintnight.childImageSharp.fluid)}
         </div>
     </main>
   </Layout>
