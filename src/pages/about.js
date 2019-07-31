@@ -39,7 +39,7 @@ const AboutPage = () => (
 				    is fairly clear: to be in a postion to help people and organizations in terms of data comprehension,
 				    analytics, and integrity, UI/UX design, and public policy. In a nutshell, she thinks it would be cool
 				    to be empowered to work on a product like the iPadOS, and also help with a local campaign/non-profit/small business/tech policy work
-				    with ease.
+				    with ease. You can take a look at my resume <a href="https://github.com/aditirajagopal/aditirajagopal/blob/master/src/components/Aditi%20Rajagopal%20Resume%20-%20Fall%202019.pdf">here</a>
 				  </p>
 	        <p class="f6 lh-copy measure mt0-ns mb0">
 	        	Also, I'm totally not an icefishing wunderkind. But I'd say I'm a pretty good artist.

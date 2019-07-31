@@ -57,7 +57,7 @@ const IndexPage = () => (
           </div>
           <div className="flex pa2 dark-gray">
             <span className="w2">💎</span>
-            <span className="f6 lh-title pl2">STAT 6021: Linear  Regression  Analysis</span>
+            <span className="f6 lh-title pl2"><a href="https://docs.google.com/document/d/1kXhSIXvHb1mHktpA1TZYn2wAgGsvrEqGkjY1d7vLo6U/edit">STAT 6021</a>: Linear  Regression  Analysis</span>
           </div>
           <div className="flex pa2 dark-gray">
             <span className="w2">🛠</span>
