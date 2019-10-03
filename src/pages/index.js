@@ -53,20 +53,23 @@ const IndexPage = () => (
         <b class="db f4 mb1 lh-copy ba bl-0 bt-0 br-0 bw-3 b--black-3 moon-gray">Main focus:</b>
           <div className="flex pa2 dark-gray">
             <span className="w2">💻</span>
-            <span className="f6 lh-title ml3"><a href="https://docs.google.com/document/d/1ZGUegOxv96zcEYDiEuX0WOC1H4YFXXBWCY77Wrdtu70/edit?usp=sharing">CS 5010</a>: Programming and Systems for Data Analysis</span>
+            <span className="f6 lh-title ml3">CS 5012 - Foundations of Computer Science</span>
           </div>
           <div className="flex pa2 dark-gray">
-            <span className="w2">💎</span>
-            <span className="f6 lh-title pl2"><a href="https://docs.google.com/document/d/1kXhSIXvHb1mHktpA1TZYn2wAgGsvrEqGkjY1d7vLo6U/edit">STAT 6021</a>: Linear  Regression  Analysis</span>
+            <span className="w2">🌪</span>
+            <span className="f6 lh-title pl2">
+              Financial Management and Policies, Accounting for Managers, Marketing, Leading Organizations, Decision Analysis 
+            </span>
           </div>
           <div className="flex pa2 dark-gray">
             <span className="w2">🛠</span>
-            <span className="f6 lh-title ml3 pl2">(Online) Coursework: Business Fundamentals, Marketing Analytics, <a href="https://news.darden.virginia.edu/2019/05/31/career-development-center-why-finding/">CDWhy</a></span>
+            <span className="f6 lh-title ml3 pl2">Recruiting</span>
           </div>
         <b class="db f4 mb1 lh-copy ba bl-0 bt-0 br-0 bw-3 b--black-3 moon-gray">Side project & initiatives</b>
           <div className="flex pa3 dark-gray">
             <span className="w2">🛠</span>
-            <span className="f6 lh-title ml3"><a href="https://github.com/aditirajagopal/aditirajagopal/blob/master/README.md">Update personal website</a></span>
+            <span className="f6 lh-title ml3"><a href="http://adobeanalyticschallenge.com/">Adobe Case Competition</a></span>
+            <span className="f6 lh-title ml3"><a href="https://hacktoberfest.digitalocean.com/">Hacktoberfest</a></span>
           </div>
         </div>
         <footer class="tc-l">
