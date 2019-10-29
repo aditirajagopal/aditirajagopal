@@ -28,20 +28,20 @@ const AboutPage = () => (
 		<article class="cf">
 		  <div class="fl w-100 w-50-ns pr5">
 				<article>
-				  <h1 class="f3 f2-m f1-l">who me?</h1>
-	        <p class="f6 lh-copy measure mt0-ns mb0 pb3">
+				  <h1 class="f3 f2-m f1-l headers">who me?</h1>
+	        <p class="f6 lh-copy measure mt0-ns mb0 pb3 text">
 				    Michigan made, Charlottesville based, Aditi Rajagopal is a technologist, aspiring artist,
 				    SWE advocate, and rising policy wonk. She is a student at University of Virginia where she
 				    is pursuing her MBA and Masters in Data Science.
 				  </p>
-	        <p class="f6 lh-copy measure mt0-ns mb0 pb3">
+	        <p class="f6 lh-copy measure mt0-ns mb0 pb3 text">
 				    In terms of career aspirations, the path is unclear, but the ultimate 'lifestyle' destination
 				    is fairly clear: to be in a postion to help people and organizations in terms of data comprehension,
 				    analytics, and integrity, UI/UX design, and public policy. In a nutshell, she thinks it would be cool
 				    to be empowered to work on a product like the iPadOS, and also help with a local campaign/non-profit/small business/tech policy work
 				    with ease. You can take a look at my resume <a href="https://github.com/aditirajagopal/aditirajagopal/blob/master/src/components/Aditi%20Rajagopal%20Resume%20-%20Fall%202019.pdf">here</a>
 				  </p>
-	        <p class="f6 lh-copy measure mt0-ns mb0">
+	        <p class="f6 lh-copy measure mt0-ns mb0 text">
 	        	Also, I'm totally not an icefishing wunderkind. But I'd say I'm a pretty good artist.
 				  </p>
 				</article>

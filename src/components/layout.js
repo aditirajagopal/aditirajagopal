@@ -34,10 +34,10 @@ const Layout = ({ children }) => {
           > $ cd /home/
         </a>
         <div className="db dtc-l v-mid w-100 w-75-l tc tr-l">
-          <Link className="link dim dark-gray f6 f5-l dib mr3 mr4-l" to="/about" title="About">me</Link>
-          <Link className="link dim dark-gray f6 f5-l dib mr3 mr4-l" to="/portfolio" title="Portfolio">portfolio</Link>
-          <Link className="link dim dark-gray f6 f5-l dib mr3 mr4-l" to="/now" title="Now">now</Link>
-          <Link className="link dim dark-gray f6 f5-l dib mr3 mr4-l" to="/pto" title="Working with Aditi">working with me</Link>
+          <Link className="link dim text f6 f5-l dib mr3 mr4-l" to="/about" title="About">me</Link>
+          <Link className="link dim text f6 f5-l dib mr3 mr4-l" to="/portfolio" title="Portfolio">portfolio</Link>
+          <Link className="link dim text f6 f5-l dib mr3 mr4-l" to="/now" title="Now">now</Link>
+          <Link className="link dim text f6 f5-l dib mr3 mr4-l" to="/pto" title="Working with Aditi">working with me</Link>
           {/* <ThemeToggler>
           {({ theme, toggleTheme }) => (
             <label>
