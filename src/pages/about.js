@@ -26,7 +26,7 @@ const AboutPage = () => (
   <Layout>
     <SEO title="About" />
 		<article class="cf">
-		  <div class="fl w-100 w-50-ns bg-white pr5">
+		  <div class="fl w-100 w-50-ns pr5">
 				<article>
 				  <h1 class="f3 f2-m f1-l">who me?</h1>
 	        <p class="f6 lh-copy measure mt0-ns mb0 pb3">
@@ -46,7 +46,7 @@ const AboutPage = () => (
 				  </p>
 				</article>
 		  </div>
-		  <div class="fl w-100 w-50-ns bg-white tc">
+		  <div class="fl w-100 w-50-ns tc">
 				<div class="aspect-ratio aspect-ratio--3x4 mb4">
 					<Image imgName="sketchofme.png" />
 			  </div>

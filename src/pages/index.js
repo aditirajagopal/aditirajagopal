@@ -37,7 +37,7 @@ const IndexPage = () => (
     </div>
       <div class="fl w-100 w-60-ns gray">
         <div style={{ paddingRight: `2rem` }}>
-        <h2 class="f4 mid-gray lh-title">
+        <h2 class="f4 lh-title">
           Midwest born and raised, software engineer and artist by practice
         </h2>
         <p class="f6 lh-copy measure mt0-ns mb0">
@@ -52,17 +52,19 @@ const IndexPage = () => (
         <div className="fn fl-ns">
         <b class="db f4 mb1 lh-copy ba bl-0 bt-0 br-0 bw-3 b--black-3 moon-gray">Main focus:</b>
           <div className="flex pa2 dark-gray">
-            <span className="w2">💻</span>
-            <span className="f6 lh-title ml3">CS 5012 - Foundations of Computer Science</span>
-          </div>
-          <div className="flex pa2 dark-gray">
             <span className="w2">🌪</span>
-            <span className="f6 lh-title pl2">
-              Financial Management and Policies, Accounting for Managers, Marketing, Leading Organizations, Decision Analysis 
+            <span className="f6 lh-title ml3 pl2">
+              Global Economies and Markets, Financial Management & Policies Part 2, Managerial Accounting, Operations Management, Strategic Thinking and Action
             </span>
           </div>
           <div className="flex pa2 dark-gray">
-            <span className="w2">🛠</span>
+            <span className="w2">💻</span>
+            <span className="f6 lh-title ml3 pl2">
+            CS 5012 - Foundations of Computer Science
+            </span>
+          </div>
+          <div className="flex pa2 dark-gray">
+            <span className="w2">🤝</span>
             <span className="f6 lh-title ml3 pl2">Recruiting</span>
           </div>
         <b class="db f4 mb1 lh-copy ba bl-0 bt-0 br-0 bw-3 b--black-3 moon-gray">Side project & initiatives</b>

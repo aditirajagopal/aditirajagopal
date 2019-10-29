@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => (
   }}
 >
   <a className="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l fw9 logo__cursor" href="/" title="Home">
-    > $ cd /home/
+    > $ cd aditirajagopal/home/
   </a>
   <div className="db dtc-l v-mid w-100 w-75-l tc tr-l">
     <a className="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="#" title="Home">me</a>

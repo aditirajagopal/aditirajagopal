@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <nav className="db dt-l w-100 border-box pa4 ph6-l mb4 bg-near-white"
+      <nav className="db dt-l w-100 border-box pa4 ph6-l mb4 navbg"
         style={{
           padding: `3 rem`,
         }}
@@ -37,23 +37,38 @@ const Layout = ({ children }) => {
           <Link className="link dim dark-gray f6 f5-l dib mr3 mr4-l" to="/about" title="About">me</Link>
           <Link className="link dim dark-gray f6 f5-l dib mr3 mr4-l" to="/portfolio" title="Portfolio">portfolio</Link>
           <Link className="link dim dark-gray f6 f5-l dib mr3 mr4-l" to="/now" title="Now">now</Link>
-          <ThemeToggler> 
-        {({ theme, toggleTheme }) => {
-          const iconClass =
-            theme === 'light' ? "🌙" : "☀️"
-          return (
-            <div>
-              <i
-                value={iconClass}
-                onClick={() => {
-                  const nextTheme = theme === 'light' ? 'dark' : 'light'
-                  toggleTheme(nextTheme)
-                }}
-              />
-            </div>
-          )
-        }}
-      </ThemeToggler>
+          <Link className="link dim dark-gray f6 f5-l dib mr3 mr4-l" to="/pto" title="Working with Aditi">working with me</Link>
+          {/* <ThemeToggler>
+          {({ theme, toggleTheme }) => (
+            <label>
+              <button
+                type="button"
+                onClick={e => {
+                  toggleTheme(e.target.checked ? 'dark' : 'light')
+                  console.log(e.target.checked)
+                  }
+                }
+                checked={theme === 'dark'}
+                value={theme === 'dark' ? '️☀️' : '🌙'}
+              />{' '}
+              Dark mode
+            </label>
+          )}
+        </ThemeToggler> */}
+        {
+          <ThemeToggler>
+            {({ theme, toggleTheme }) => (
+              <label>
+                <input
+                  type="checkbox"
+                  onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+                  checked={theme === 'dark'}
+                />{' '}
+                Dark mode
+              </label>
+            )}
+          </ThemeToggler>          
+        }
         </div>
       </nav>
       <div
