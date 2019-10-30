@@ -38,37 +38,25 @@ const Layout = ({ children }) => {
           <Link className="link dim text f6 f5-l dib mr3 mr4-l" to="/portfolio" title="Portfolio">portfolio</Link>
           <Link className="link dim text f6 f5-l dib mr3 mr4-l" to="/now" title="Now">now</Link>
           <Link className="link dim text f6 f5-l dib mr3 mr4-l" to="/pto" title="Working with Aditi">working with me</Link>
-          {/* <ThemeToggler>
-          {({ theme, toggleTheme }) => (
-            <label>
-              <button
-                type="button"
-                onClick={e => {
-                  toggleTheme(e.target.checked ? 'dark' : 'light')
-                  console.log(e.target.checked)
-                  }
-                }
-                checked={theme === 'dark'}
-                value={theme === 'dark' ? '️☀️' : '🌙'}
-              />{' '}
-              Dark mode
-            </label>
-          )}
-        </ThemeToggler> */}
-        {
-          <ThemeToggler>
-            {({ theme, toggleTheme }) => (
-              <label>
-                <input
-                  type="checkbox"
-                  onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
-                  checked={theme === 'dark'}
-                />{' '}
-                Dark mode
-              </label>
-            )}
-          </ThemeToggler>          
-        }
+          {
+            <ThemeToggler> 
+            {({ theme, toggleTheme }) => {
+              const iconClass =
+                theme === 'light' ? '🌙' : '☀️'
+              return (
+                <Fragment>
+                  <button
+                    className="${iconClass} themeButton"
+                    onClick={() => {
+                      const nextTheme = theme === 'light' ? 'dark' : 'light'
+                      toggleTheme(nextTheme)
+                    }}
+                  >{iconClass}</button>
+                </Fragment>
+              )
+            }}
+            </ThemeToggler>
+          }
         </div>
       </nav>
       <div
