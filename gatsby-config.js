@@ -25,27 +25,6 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: `nowLog`,
-        path: `${__dirname}/src/nowLog`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: `blog`,
-        path: `${__dirname}/src/blog`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: `favorites`,
-        path: `${__dirname}/src/favoritesLog`,
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
