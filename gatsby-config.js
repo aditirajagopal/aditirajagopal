@@ -21,22 +21,22 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/pages/nowLog`,
         name: `nowLog`,
+        path: `${__dirname}/src/pages/nowLog`,
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/pages/blog`,
         name: `blog`,
+        path: `${__dirname}/src/pages/blog`,
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/pages/favoritesLog`,
         name: `favorites`,
+        path: `${__dirname}/src/pages/favoritesLog`,
       },
     },
     `gatsby-transformer-sharp`,
