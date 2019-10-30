@@ -19,24 +19,31 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: `nowLog`,
-        path: `${__dirname}/src/pages/nowLog`,
+        path: `${__dirname}/src/nowLog`,
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: `blog`,
-        path: `${__dirname}/src/pages/blog`,
+        path: `${__dirname}/src/blog`,
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: `favorites`,
-        path: `${__dirname}/src/pages/favoritesLog`,
+        path: `${__dirname}/src/favoritesLog`,
       },
     },
     `gatsby-transformer-sharp`,
