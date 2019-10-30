@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
               return (
                 <Fragment>
                   <button
-                    className="${iconClass}"
+                    className="${iconClass} themeButton"
                     onClick={() => {
                       const nextTheme = theme === 'light' ? 'dark' : 'light'
                       toggleTheme(nextTheme)
