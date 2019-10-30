@@ -26,10 +26,10 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <article class="cf">
-      <time className="dark-gray">Hi, my name is</time>
+      <time className="headers">Hi, my name is</time>
     <div class="flex v-mid mb4">
       <h1 className="f-subheadline lh-title measure-narrow mv0">
-        <span className="lh-copy near-black tracked-tight">
+        <span className="lh-copy headers tracked-tight">
           aditi rajagopal
         </span>
       </h1>
@@ -37,40 +37,40 @@ const IndexPage = () => (
     </div>
       <div class="fl w-100 w-60-ns gray">
         <div style={{ paddingRight: `2rem` }}>
-        <h2 class="f4 lh-title">
+        <h2 class="f4 lh-title headers">
           Midwest born and raised, software engineer and artist by practice
         </h2>
-        <p class="f6 lh-copy measure mt0-ns mb0">
+        <p class="f6 lh-copy measure mt0-ns mb0 text">
           I'm currently a student at University of Virginia pursuing my MBA and Masters in Data Science (at the Darden School of Business & School of Data Science respectively). Prior to this, I was a sofware engineer at IBM for (almost) 5 years, working primarily on cloud infrastructure services -- most recently, the IBM Kubernetes Service on their UI/Design Team. I also served as Treasurer of the Society of Women Engineers Minnesota Professional Section for the FY18 & FY19 fiscal years.
         </p>
         <footer>
-          <time className="f7 mb2 dib ttu tracked mt3 gray"><small>Last Updated: July 2019</small></time>
+          <time className="f7 mb2 dib ttu tracked mt3 light-gray"><small>Last Updated: July 2019</small></time>
         </footer>
         </div>
       </div>
       <div class="fl w-100 w-40-ns white">
         <div className="fn fl-ns">
-        <b class="db f4 mb1 lh-copy ba bl-0 bt-0 br-0 bw-3 b--black-3 moon-gray">Main focus:</b>
-          <div className="flex pa2 dark-gray">
+        <b class="db f4 mb1 lh-copy ba bl-0 bt-0 br-0 bw-3 b--black-3 headers">Main focus:</b>
+          <div className="flex pa2 text">
             <span className="w2">🌪</span>
             <span className="f6 lh-title ml3 pl2">
               Global Economies and Markets, Financial Management & Policies Part 2, Managerial Accounting, Operations Management, Strategic Thinking and Action
             </span>
           </div>
-          <div className="flex pa2 dark-gray">
+          <div className="flex pa2 text">
             <span className="w2">💻</span>
             <span className="f6 lh-title ml3 pl2">
             CS 5012 - Foundations of Computer Science
             </span>
           </div>
-          <div className="flex pa2 dark-gray">
+          <div className="flex pa2 text">
             <span className="w2">🤝</span>
             <span className="f6 lh-title ml3 pl2">Recruiting</span>
           </div>
-        <b class="db f4 mb1 lh-copy ba bl-0 bt-0 br-0 bw-3 b--black-3 moon-gray">Side project & initiatives</b>
-          <div className="flex pa3 dark-gray">
+        <b class="db f4 mb1 lh-copy ba bl-0 bt-0 br-0 bw-3 b--black-3 headers">Side project & initiatives</b>
+          <div className="flex pa3 text">
             <span className="w2">🛠</span>
-            <span className="f6 lh-title ml3"><a href="http://adobeanalyticschallenge.com/">Adobe Case Competition</a></span>
+            <span className="f6 lh-title ml3"><a href="https://www.instagram.com/humansofdarden/">Humans of Darden</a></span>
             <span className="f6 lh-title ml3"><a href="https://hacktoberfest.digitalocean.com/">Hacktoberfest</a></span>
           </div>
         </div>
