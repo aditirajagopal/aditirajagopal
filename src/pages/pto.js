@@ -7,12 +7,21 @@ const PTOPage = () => (
   <Layout>
     <SEO title="PTO" />
 		<article class="pa3 pa5-ns">
-			<h1 class="f3 f2-m f1-l">Working with Aditi</h1>
+			<h1 class="f3 f2-m f1-l">[WIP]: Working with Aditi</h1>
 				<h2 class="f3 mid-gray lh-title mt2">
 					<a href="https://www.bcg.com/careers/working-at-bcg/corporate-culture.aspx">Predictability, Teaming, and Open Communication (PTO)</a>
 				</h2>
 				<time class="f6 ttu tracked gray">Last Updated: Oct. 2019</time>
 				<p class="measure lh-copy">
+					<ol>
+						<li>Hours & Scheduling</li>
+						<li>Goals (School Q2/IRL Q4)</li>
+						<li>Values</li>
+						<li>Motivators & Demotivators</li>
+						<li>Feedback</li>
+						<li>Work History</li>
+						<li>Skills Inventory</li>
+					</ol>
 				</p>
 			<p class="measure lh-copy">
 			</p>
