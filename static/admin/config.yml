@@ -1,6 +1,6 @@
 backend:
-  name: aditirajagopal.v5
-  repo: aditirajagopal/aditirajagopal.v5
+  name: github
+  repo: aditirajagopal/aditirajagopal
 
 media_folder: static/assets
 public_folder: assets
