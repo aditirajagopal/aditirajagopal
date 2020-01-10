@@ -11,6 +11,17 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import "./layout.css"
 import "./app.css"
+import portfoliopdf from "./Aditi_Rajagopal_Portfolio.pdf"
+
+export const fluidImage = graphql`
+fragment fluidImage on File {
+  childImageSharp {
+    fluid(maxWidth: 1000) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`;
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -35,7 +46,7 @@ const Layout = ({ children }) => {
         </a>
         <div className="db dtc-l v-mid w-100 w-75-l tc tr-l">
           <Link className="link dim text f6 f5-l dib mr3 mr4-l" to="/about" title="About">me</Link>
-          <Link className="link dim text f6 f5-l dib mr3 mr4-l" to="/portfolio" title="Portfolio">portfolio</Link>
+          <Link className="link dim text f6 f5-l dib mr3 mr4-l" to={portfoliopdf} title="Portfolio">portfolio</Link>
           <Link className="link dim text f6 f5-l dib mr3 mr4-l" to="/now" title="Now">now</Link>
           <Link className="link dim text f6 f5-l dib mr3 mr4-l" to="/pto" title="Working with Aditi">working with me</Link>
           {
