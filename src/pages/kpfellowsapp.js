@@ -5,7 +5,27 @@ import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const KPFellowsPage = () => (
+export const fluidImage = graphql`
+fragment fluidImage on File {
+  childImageSharp {
+    fluid(maxWidth: 1000) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`;
+
+export const wnrsQuery = graphql`
+  query {
+    wnrs0: file(relativePath: { eq: "wnrs0.jpg" }) {
+       ...fluidImage, publicURL }
+    wnrs1: file(relativePath: { eq: "wnrs1.jpg" }) {
+      ...fluidImage, publicURL
+    }
+  }
+`
+
+const KPFellowsPage = (props) => (
   <Layout>
     <SEO title="KP Fellows Application" />
 
@@ -49,7 +69,8 @@ const KPFellowsPage = () => (
 				mentoring programs, Women's Association of Venture and Equity, etc.). This past year has been especially 
 				tumultuous for my family and me, but reflecting on Jim's mantra, "what's the goal," and on how he lived his 
 				life has helped me zone in on what matters most to me, and what it means to live a well-rounded life. I want to 
-				honor his memory by applying my learnings, leadership, and interpersonal skills to solve impossible problems 
+				<a href="https://www.legacy.com/obituaries/postbulletin/obituary.aspx?pid=187837099">honor his memory</a>
+				by applying my learnings, leadership, and interpersonal skills to solve impossible problems 
 				and to support those who matter the most to me.
 			</p>
 		</article>
@@ -75,6 +96,7 @@ const KPFellowsPage = () => (
 				packaging foreshadows the thoughtfulness of the game's questions with subtle messages like "Come Curious, Leave Connected" 
 				and "Inside we're all the same."
 			</p>
+		      <Img className="w-100 f3 measure dib" alt="Photo of WNRS game box" fluid={props.data.wnrs0.childImageSharp.fluid} />
 			<p class="lh-copy text">
 				The WNRS Instagram account and text messaging platform transcend WNRS and create a bridge from the game into an 
 				immersive community. Through the Instagram account, Koreen shares her personal artwork and poses thought-provoking 
@@ -86,6 +108,7 @@ const KPFellowsPage = () => (
 				message courses (similar to Arist.co and The Nudge) to expand their offerings. This way, they can continue to grow 
 				the virtual counterpart of the physical product.
 			</p>
+	  	      <Img className="w-100 f3 measure dib" alt="Photo of WNRS game contents" fluid={props.data.wnrs1.childImageSharp.fluid} />
 			<p class="lh-copy text">
 				The expansion packs for the card game started with topics like dating (in collaboration with Bumble) but have 
 				since expanded to be more timely topics such as BLM and the 2020 election. Considering the importance of the topics, I
@@ -98,6 +121,16 @@ const KPFellowsPage = () => (
 				for the workplace to get to know your teammates and coworkers, and perhaps a counterpart pack dedicated to 
 				diversity and inclusion. WNRS strives to bring out the best in those who play the game and form tightly-knit 
 				communities - why not expand it to different gameplay environments?
+			</p>
+		</article>
+		<article class="cf">
+			<h2 class="f3 headers lh-title mt2">
+				Feel free to submit a link to content you've created that is representative of who you are and what you care about. This can be your Twitter handle, Medium account, Youtube Channel, etc.
+			</h2>
+			<p class="lh-copy text">
+				Portfolio
+				Zoom Paper
+				Twitter
 			</p>
 		</article>
 
