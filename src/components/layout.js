@@ -47,7 +47,6 @@ const Layout = ({ children }) => {
         <div className="db dtc-l v-mid w-100 w-50-l tc tr-l">
           <Link className="link dim text f6 f5-l dib mr3 mr4-l" to="/about" title="About">me</Link>
           <a className="link dim text f6 f5-l dib mr3 mr4-l" href={portfoliopdf} title="Portfolio">portfolio</a>
-          <Link className="link dim text f6 f5-l dib mr3 mr4-l" to="/now" title="Now">now</Link>
           <Link className="link dim text f6 f5-l dib mr3 mr4-l" to="/pto" title="Working with Aditi">working with me</Link>
           {
             <ThemeToggler> 

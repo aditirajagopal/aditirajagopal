@@ -2,6 +2,8 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 const KPFellowsPage = () => (
   <Layout>
@@ -31,26 +33,78 @@ const KPFellowsPage = () => (
 				</p>
 		</article>
 		<article class="cf">
-				<h2 class="f3 headers lh-title mt2">
-					Describe your most meaningful experience(s) and why they matter to you.
-				</h2>
-				<p class="lh-copy text">
-					When I joined IBM's Rochester Minnesota office, someone who took an early interest in me was Jim, a senior 
-					engineer and IBM "Master Inventor." Jim quickly turned into my mentor, innovation coach, and "work BFF" - 
-					he helped me foment the direction of my life by always asking the question, "what's the goal?" Jim saw my 
-					interest in the intersection of technology, design, and business as an asset, whereas in the past, many 
-					misinterpreted these passions as a lack of interest in core engineering and technology. Jim nurtured my 
-					potential and pushed me to channel my curiosity into action via patents and side projects. Working with Jim 
-					eepened my appreciation for the tech industry and fueled me to encourage others to embrace engineering and 
-					technology as a career path.  Through volunteerism, I aspired to make tech accessible to others in ways 
-					that it wasn't for me (via the Society of Women Engineers, Girls Who Code, etc.) and mentoring (Darden MBA 
-					mentoring programs, Women's Association of Venture and Equity, etc.). This past year has been especially 
-					tumultuous for my family and me, but reflecting on Jim's mantra, "what's the goal," and on how he lived his 
-					life has helped me zone in on what matters most to me, and what it means to live a well-rounded life. I want to 
-					honor his memory by applying my learnings, leadership, and interpersonal skills to solve impossible problems 
-					and to support those who matter the most to me.
-				</p>
+			<h2 class="f3 headers lh-title mt2">
+				Describe your most meaningful experience(s) and why they matter to you.
+			</h2>
+			<p class="lh-copy text">
+				When I joined IBM's Rochester Minnesota office, someone who took an early interest in me was Jim, a senior 
+				engineer and IBM "Master Inventor." Jim quickly turned into my mentor, innovation coach, and "work BFF" - 
+				he helped me foment the direction of my life by always asking the question, "what's the goal?" Jim saw my 
+				interest in the intersection of technology, design, and business as an asset, whereas in the past, many 
+				misinterpreted these passions as a lack of interest in core engineering and technology. Jim nurtured my 
+				potential and pushed me to channel my curiosity into action via patents and side projects. Working with Jim 
+				eepened my appreciation for the tech industry and fueled me to encourage others to embrace engineering and 
+				technology as a career path.  Through volunteerism, I aspired to make tech accessible to others in ways 
+				that it wasn't for me (via the Society of Women Engineers, Girls Who Code, etc.) and mentoring (Darden MBA 
+				mentoring programs, Women's Association of Venture and Equity, etc.). This past year has been especially 
+				tumultuous for my family and me, but reflecting on Jim's mantra, "what's the goal," and on how he lived his 
+				life has helped me zone in on what matters most to me, and what it means to live a well-rounded life. I want to 
+				honor his memory by applying my learnings, leadership, and interpersonal skills to solve impossible problems 
+				and to support those who matter the most to me.
+			</p>
 		</article>
+		<article class="cf">
+			<h2 class="f3 headers lh-title mt2">
+				What is the latest product you’re absolutely obsessed with and why? Briefly explain what the product is, provide a broader analysis on why it plays such a significant role, and come up with any recommendations you might have for future improvements. You can provide your submission as a link to your blog post or video.
+			</h2>
+			<p class="lh-copy text">
+				Here at the University of Virginia, due to recent spikes in Covid-19 cases, the University in tandem with the 
+				city of Charlottesville has limited social gatherings to 5 people or fewer. At a time where we are supposed to 
+				be developing lifelong relationships, students are feeling increasingly isolated from one another and from loved 
+				ones - myself included. A product that has been thought-provoking and joyful to experience is the game "We're Not 
+				Really Strangers" (WNRS). Created by Koreen, the card game's goal is to cultivate meaningful connections through 
+				three levels of questions. According to Koreen, you can either play safe or play to grow. 
+			</p>
+			<p class="lh-copy text">
+				During quarantine, I have spent countless hours in virtual happy hours and game nights bonding with my classmates, 
+				friends, and family. Traditional board games and virtual games start out as fun, but often turn repetitive and into 
+				drinking games. I appreciate WNRS because it's a different experience every time you play, and the experience doesn't 
+				end when the gameplay stops. Because the questions get increasingly reflective and personal, the memories are a lot 
+				stronger and more vivid. An added bonus is that you always leave with memorabilia because the mandatory final card in 
+				the game is "Each player writes a message to the other. Fold and exchange. Open only once you have parted". The game's 
+				packaging foreshadows the thoughtfulness of the game's questions with subtle messages like "Come Curious, Leave Connected" 
+				and "Inside we're all the same."
+			</p>
+			<p class="lh-copy text">
+				The WNRS Instagram account and text messaging platform transcend WNRS and create a bridge from the game into an 
+				immersive community. Through the Instagram account, Koreen shares her personal artwork and poses thought-provoking 
+				questions throughout the week. The text messaging platform gives you early access to product drops, but also serves 
+				as daily check-ins. Sometimes the text messages' timings are almost too coincidental, but serve as a way to check-in 
+				with your heart on a daily basis (e.g. "Showing up as your authentic self gives others around you permission to do 
+				the same"). I often share these texts with my friends and family, and I feel like they have sparked meaningful 
+				conversation and brought us closer. As the WNRS community continues to grow, they can tap into the trend of text 
+				message courses (similar to Arist.co and The Nudge) to expand their offerings. This way, they can continue to grow 
+				the virtual counterpart of the physical product.
+			</p>
+			<p class="lh-copy text">
+				The expansion packs for the card game started with topics like dating (in collaboration with Bumble) but have 
+				since expanded to be more timely topics such as BLM and the 2020 election. Considering the importance of the topics, I
+				appreciate that the latter two expansion packs were free as printable pdfs. I see the expansion packs as an 
+				avenue for future product improvements. On a couple of occasions where I suggested playing this game, I've 
+				gotten the response, "this is game night, not a therapy session." Because of the game's introspective and 
+				reflective nature, it creates a 'self-selecting' dynamic for those interested in playing. To make the game 
+				more "game night friendly," I suggest launching an expansion pack with more accessible and light-hearted 
+				questions that can ease newcomers into the original game. Additionally, they could create an expansion pack 
+				for the workplace to get to know your teammates and coworkers, and perhaps a counterpart pack dedicated to 
+				diversity and inclusion. WNRS strives to bring out the best in those who play the game and form tightly-knit 
+				communities - why not expand it to different gameplay environments?
+			</p>
+		</article>
+
+
+
+
+
 
 		<footer class="pv4 ph3 ph5-m ph6-l text">
 			<small class="mt3 tc">Thanks for reading!</small>
