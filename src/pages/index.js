@@ -52,26 +52,25 @@ const IndexPage = () => (
         <div className="fn fl-ns">
         <b class="db f4 mb1 lh-copy ba bl-0 bt-0 br-0 bw-3 b--black-3 headers">Main focus:</b>
           <div className="flex pa2 text">
-            <span className="w2">🌪</span>
-            <span className="f6 lh-title ml3 pl2">
-              Global Economies and Markets, Financial Management & Policies Part 2, Managerial Accounting, Operations Management, Strategic Thinking and Action
-            </span>
-          </div>
-          <div className="flex pa2 text">
             <span className="w2">💻</span>
             <span className="f6 lh-title ml3 pl2">
-            CS 5012 - Foundations of Computer Science
+              Academics: Bayesian ML, Data Mining, Ultimate Questions in Business, Project Management, Behavioral Decision Making
             </span>
           </div>
           <div className="flex pa2 text">
-            <span className="w2">🤝</span>
-            <span className="f6 lh-title ml3 pl2">Recruiting</span>
+            <span className="w2">⛵️</span>
+            <span className="f6 lh-title ml3 pl2">Fin VC Fellowship</span>
           </div>
-        <b class="db f4 mb1 lh-copy ba bl-0 bt-0 br-0 bw-3 b--black-3 headers">Side project & initiatives</b>
+          <div className="flex pa2 text">
+            <span className="w2">📝</span>
+            <span className="f6 lh-title ml3 pl2">
+              Writing (stay tuned!!)
+            </span>
+          </div>
+        <b class="db f4 mb1 lh-copy ba bl-0 bt-0 br-0 bw-3 b--black-3 headers">On the Horizon</b>
           <div className="flex pa3 text">
             <span className="w2">🛠</span>
-            <span className="f6 lh-title ml3"><a href="https://www.instagram.com/humansofdarden/">Humans of Darden</a></span>
-            <span className="f6 lh-title ml3"><a href="https://hacktoberfest.digitalocean.com/">Hacktoberfest</a></span>
+            <span className="f6 lh-title ml3">Brainstorming events for: Data Science Club & EVC Club</span>
           </div>
         </div>
         <footer class="tc-l">
