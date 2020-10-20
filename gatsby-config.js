@@ -12,13 +12,7 @@ module.exports = {
     `gatsby-plugin-dark-mode`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `blog`,
-        path: `${__dirname}/src/blog`,
-      },
-    },
+    `gatsby-plugin-anchor-links`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -37,6 +31,18 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+              plugins: [{
+                resolve: `gatsby-remark-autolink-headers`,
+                options: {
+                  className: `anchorClass`,
+                  elements: [`h1`, `h2`, `h3`],
+                }
+              }]
+            },            
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
