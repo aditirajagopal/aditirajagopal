@@ -64,6 +64,17 @@ body.dark .themeButton {
   background: #4286f4;
 }
 
+body.dark a {
+  color: #C1C1C1;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+body.dark a:active,
+body.dark a:hover {
+  color: #D1D1D1;
+  outline-width: 0;
+}
+
 article,
 aside,
 details,

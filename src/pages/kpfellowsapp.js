@@ -4,6 +4,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
+import portfoliopdf from "../components/Aditi_Rajagopal_Portfolio.pdf"
+
 
 export const fluidImage = graphql`
 fragment fluidImage on File {
@@ -27,11 +30,32 @@ export const wnrsQuery = graphql`
 
 const KPFellowsPage = (props) => (
   <Layout>
-    <SEO title="KP Fellows Application" />
+    <SEO title="2021 Kleiner Perkins Fellows Application" />
 
-		<h1 class="f3 f2-m f1-l headers">KP Fellows Application 2020</h1>
+
+		<h1 class="f3 f2-m f1-l headers">2021 Kleiner Perkins Fellows Application</h1>
+
+			<dl class="lh-title mt0">
+			  <dt class="measure f4 f3-ns lh-copy pb4">
+			  	<AnchorLink to="kpfellowsapp/#q1">Question 1: Impact</AnchorLink>
+			  </dt>
+			  <dt class="measure f4 f3-ns lh-copy pb4">
+			  	<AnchorLink to="kpfellowsapp/#q2">Question 2: Meaningful Experiences</AnchorLink>
+			  </dt>
+			  <dt class="measure f4 f3-ns lh-copy pb4">
+			  	<AnchorLink to="kpfellowsapp/#q3">Question 3: Product Obsession</AnchorLink>
+			  </dt>
+			  <dt class="measure f4 f3-ns lh-copy pb4">
+			  	<AnchorLink to="kpfellowsapp/#q4">Question 4: Notable Links</AnchorLink>
+			  </dt>
+			</dl>
+
+        
+        
+        
+
 		<article class="cf">
-				<h2 class="f3 headers lh-title mt2">
+				<h2 class="f4 headers lh-title mt2 anchorClass" id="q1">
 					What impact do you want to have on the world and why?
 				</h2>
 				<p class="lh-copy text">
@@ -53,7 +77,7 @@ const KPFellowsPage = (props) => (
 				</p>
 		</article>
 		<article class="cf">
-			<h2 class="f3 headers lh-title mt2">
+			<h2 class="f4 headers lh-title mt2 anchorClass" id="q2">
 				Describe your most meaningful experience(s) and why they matter to you.
 			</h2>
 			<p class="lh-copy text">
@@ -69,13 +93,13 @@ const KPFellowsPage = (props) => (
 				mentoring programs, Women's Association of Venture and Equity, etc.). This past year has been especially 
 				tumultuous for my family and me, but reflecting on Jim's mantra, "what's the goal," and on how he lived his 
 				life has helped me zone in on what matters most to me, and what it means to live a well-rounded life. I want to 
-				<a href="https://www.legacy.com/obituaries/postbulletin/obituary.aspx?pid=187837099">honor his memory</a>
+				<a href="https://www.legacy.com/obituaries/postbulletin/obituary.aspx?pid=187837099"> honor his memory </a>
 				by applying my learnings, leadership, and interpersonal skills to solve impossible problems 
 				and to support those who matter the most to me.
 			</p>
 		</article>
 		<article class="cf">
-			<h2 class="f3 headers lh-title mt2">
+			<h2 class="f4 headers lh-title mt2 anchorClass" id="q3">
 				What is the latest product you’re absolutely obsessed with and why? Briefly explain what the product is, provide a broader analysis on why it plays such a significant role, and come up with any recommendations you might have for future improvements. You can provide your submission as a link to your blog post or video.
 			</h2>
 			<p class="lh-copy text">
@@ -124,13 +148,13 @@ const KPFellowsPage = (props) => (
 			</p>
 		</article>
 		<article class="cf">
-			<h2 class="f3 headers lh-title mt2">
+			<h2 class="f3 headers lh-title mt2" id="q4">
 				Feel free to submit a link to content you've created that is representative of who you are and what you care about. This can be your Twitter handle, Medium account, Youtube Channel, etc.
 			</h2>
 			<p class="lh-copy text">
-				Portfolio
-				Zoom Paper
-				Twitter
+				<a className="link dim text f6 f5-l dib mr3 mr4-l" href={portfoliopdf} title="Portfolio">portfolio</a>
+				<a className="link dim text f6 f5-l dib mr3 mr4-l" href="https://docs.google.com/document/d/1BOPfeaoagLf27-6ROXcv2ypG396Ie0ejaXcrhC50DP8/edit?usp=sharing" title="Zoom Paper">Data Ethics Paper: Zoom</a>
+				<a className="link dim text f6 f5-l dib mr3 mr4-l" href="https://twitter.com/aditi_rajagopal" title="Twitter">portfolio</a>				
 			</p>
 		</article>
 
@@ -139,8 +163,8 @@ const KPFellowsPage = (props) => (
 
 
 
-		<footer class="pv4 ph3 ph5-m ph6-l text">
-			<small class="mt3 tc">Thanks for reading!</small>
+		<footer class="text">
+			<small class="mt3 tc pb4">Thanks for reading!</small>
 		</footer>
   </Layout>
 )
