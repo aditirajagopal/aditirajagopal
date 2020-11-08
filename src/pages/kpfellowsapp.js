@@ -37,16 +37,16 @@ const KPFellowsPage = (props) => (
 
 			<dl class="lh-title mt0">
 			  <dt class="measure f4 f3-ns lh-copy pb4">
-			  	<AnchorLink to="kpfellowsapp/#q1">Question 1: Impact</AnchorLink>
+			  	<AnchorLink to="#q1">Question 1: Impact</AnchorLink>
 			  </dt>
 			  <dt class="measure f4 f3-ns lh-copy pb4">
-			  	<AnchorLink to="kpfellowsapp/#q2">Question 2: Meaningful Experiences</AnchorLink>
+			  	<AnchorLink to="#q2">Question 2: Meaningful Experiences</AnchorLink>
 			  </dt>
 			  <dt class="measure f4 f3-ns lh-copy pb4">
-			  	<AnchorLink to="kpfellowsapp/#q3">Question 3: Product Obsession</AnchorLink>
+			  	<AnchorLink to="#q3">Question 3: Product Obsession</AnchorLink>
 			  </dt>
 			  <dt class="measure f4 f3-ns lh-copy pb4">
-			  	<AnchorLink to="kpfellowsapp/#q4">Question 4: Notable Links</AnchorLink>
+			  	<AnchorLink to="#q4">Question 4: Notable Links</AnchorLink>
 			  </dt>
 			</dl>
 
