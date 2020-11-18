@@ -59,21 +59,20 @@ const KPFellowsPage = (props) => (
 					What impact do you want to have on the world and why?
 				</h2>
 				<p class="lh-copy text">
-					I plan to make an impact through a professional, personal, and advocacy lens. 
-					Professionally, I want to build and grow resilient and empowered product teams that embody a "stakeholder 
-					first" mentality. Given my skills at the intersection of business, technology, and data science, I want to 
-					challenge my teams to creatively solve problems using data while acting responsibly and ethically. Based on 
-					my past experiences working in turbulent organizations, I firmly believe that facilitating environments where 
-					psychological safety and inclusion are at the forefront enable individuals to bring their best selves to any 
-					challenge. I want to raise these expectations and redefine the possibilities for positive work environments 
-					across the tech industry. I aspire to be a lifelong learner and to pick up skills no matter how mundane or 
-					eccentric - for example, learning how to make homemade pizza dough and <a href="https://www.youtube.com/watch?v=3fG8rNHUspU">pepcorn</a> and sharing this passion with 
-					others has encouraged team bonding for various projects. From an advocacy perspective, I plan to channel my 
-					skills into my local community by engaging with public policy leaders in my area and continuing my leadership 
-					with the Society of Women Engineers and other advocacy programs. Bringing these aspirations together, I want to 
-					take my learnings from the KPCB Fellowship to facilitate the growth of the Midwest's tech sector by growing and 
-					investing in ventures in the region while seeking opportunities for public and private sector partnerships to 
-					promote economic development. I want to help rebuild and strengthen the community that raised me.  
+					Professionally, I want to build and grow resilient and empowered product teams that embody a “stakeholder first” 
+					mentality. Given my skills at the intersection of business, technology, and data science, I intend to challenge my 
+					teams to creatively solve problems using data while acting responsibly and ethically. Based on my past experiences 
+					working in turbulent organizations, I believe that facilitating environments where psychological safety and inclusion 
+					are at the forefront enable individuals to bring their best selves to any challenge. I want to raise these expectations 
+					and redefine the possibilities for positive work environments across the tech industry. I aspire to be a lifelong learner 
+					and to pick up skills no matter how mundane or eccentric - for example, learning how to make homemade pizza dough and 
+					<a href="https://www.youtube.com/watch?v=3fG8rNHUspU">pepcorn</a> and sharing this passion with others has encouraged 
+					team bonding for various projects. From an advocacy perspective, I plan to channel my skills into my local community 
+					by engaging with public policy leaders in my area and continuing my leadership with the Society of Women Engineers and 
+					other advocacy programs. Bringing these aspirations together, I want to take my learnings from the KPCB Fellowship to 
+					facilitate the growth of the Midwest’s tech sector by nurturing and investing in ventures in the region while seeking 
+					opportunities for public and private sector partnerships to promote economic development. I want to help rebuild and 
+					strengthen the community that raised me.
 				</p>
 		</article>
 		<article class="cf">
@@ -81,18 +80,17 @@ const KPFellowsPage = (props) => (
 				Describe your most meaningful experience(s) and why they matter to you.
 			</h2>
 			<p class="lh-copy text">
-				When I joined IBM's Rochester Minnesota office, someone who took an early interest in me was Jim, a senior 
-				engineer and IBM "Master Inventor." Jim quickly turned into my mentor, innovation coach, and "work BFF" - 
-				he helped me foment the direction of my life by always asking the question, "what's the goal?" Jim saw my 
-				interest in the intersection of technology, design, and business as an asset, whereas in the past, many 
-				misinterpreted these passions as a lack of interest in core engineering and technology. Jim nurtured my 
-				potential and pushed me to channel my curiosity into action via patents and side projects. Working with Jim 
-				eepened my appreciation for the tech industry and fueled me to encourage others to embrace engineering and 
-				technology as a career path.  Through volunteerism, I aspired to make tech accessible to others in ways 
-				that it wasn't for me (via the Society of Women Engineers, Girls Who Code, etc.) and mentoring (Darden MBA 
-				mentoring programs, Women's Association of Venture and Equity, etc.). This past year has been especially 
-				tumultuous for my family and me, but reflecting on Jim's mantra, "what's the goal," and on how he lived his 
-				life has helped me zone in on what matters most to me, and what it means to live a well-rounded life. I want to 
+				When I joined IBM’s Rochester Minnesota office, someone who took an early interest in me was Jim, a senior engineer 
+				and IBM “Master Inventor.” Jim quickly turned into my mentor, innovation coach, and “work BFF” - he helped me change 
+				the direction of my life by always asking the question, “what’s the goal?” Jim saw my interest in the intersection of 
+				technology, design, and business as an asset. In contrast, in the past, many misinterpreted these passions as a lack 
+				of interest in core engineering and technology. Jim nurtured my potential and pushed me to channel my curiosity into 
+				action via patents and side projects. Working with Jim deepened my appreciation for the tech industry and fueled me 
+				to encourage others to embrace engineering and technology as a career path.  Through volunteerism, I aspired to make 
+				tech accessible to others in ways that it hadn’t been for me (via the Society of Women Engineers, Girls Who Code, etc.) 
+				and mentoring (Darden MBA mentoring programs, Women’s Association of Venture and Equity, etc.). This past year has been 
+				especially tumultuous for my family and me, but reflecting on Jim’s mantra, “what’s the goal,” and on how he lived his 
+				life has helped me home in on what matters and what it means to live a well-rounded life. I want to 
 				<a href="https://www.legacy.com/obituaries/postbulletin/obituary.aspx?pid=187837099"> honor his memory </a>
 				by applying my learnings, leadership, and interpersonal skills to solve impossible problems 
 				and to support those who matter the most to me.
