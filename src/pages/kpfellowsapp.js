@@ -67,7 +67,7 @@ const KPFellowsPage = (props) => (
 					psychological safety and inclusion are at the forefront enable individuals to bring their best selves to any 
 					challenge. I want to raise these expectations and redefine the possibilities for positive work environments 
 					across the tech industry. I aspire to be a lifelong learner and to pick up skills no matter how mundane or 
-					eccentric - for example, learning how to make homemade pizza dough and pepcorn and sharing this passion with 
+					eccentric - for example, learning how to make homemade pizza dough and <a href="https://www.youtube.com/watch?v=3fG8rNHUspU">pepcorn</a> and sharing this passion with 
 					others has encouraged team bonding for various projects. From an advocacy perspective, I plan to channel my 
 					skills into my local community by engaging with public policy leaders in my area and continuing my leadership 
 					with the Society of Women Engineers and other advocacy programs. Bringing these aspirations together, I want to 
