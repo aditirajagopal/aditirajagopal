@@ -152,7 +152,7 @@ const KPFellowsPage = (props) => (
 			<p class="lh-copy text">
 				<a className="link dim text f6 f5-l dib mr3 mr4-l" href={portfoliopdf} title="Portfolio">portfolio</a>
 				<a className="link dim text f6 f5-l dib mr3 mr4-l" href="https://docs.google.com/document/d/1BOPfeaoagLf27-6ROXcv2ypG396Ie0ejaXcrhC50DP8/edit?usp=sharing" title="Zoom Paper">Data Ethics Paper: Zoom</a>
-				<a className="link dim text f6 f5-l dib mr3 mr4-l" href="https://twitter.com/aditi_rajagopal" title="Twitter">portfolio</a>				
+				<a className="link dim text f6 f5-l dib mr3 mr4-l" href="https://twitter.com/aditi_rajagopal" title="Twitter">twitter</a>				
 			</p>
 		</article>
 
