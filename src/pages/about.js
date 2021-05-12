@@ -6,10 +6,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Image from "../components/image"
 
-const Sketch = () => {
+const DogAndMe = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "sketchofme.png" }) {
+      placeholderImage: file(relativePath: { eq: "dog_and_me.JPG" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -30,26 +30,35 @@ const AboutPage = () => (
 				<article>
 				  <h1 class="f3 f2-m f1-l headers">who me?</h1>
 	        <p class="f6 lh-copy measure mt0-ns mb0 pb3 text">
-				    Michigan made, Charlottesville based, Aditi Rajagopal is a technologist, aspiring artist,
+				    Michigan made, Charlottesville based (but not for long!), Aditi Rajagopal is a technologist, aspiring VC, artist
 				    SWE advocate, and rising policy wonk. She is a student at University of Virginia where she
-				    is pursuing her MBA and Masters in Data Science.
+				    is pursuing her MBA and Masters in Data Science and will be graduating in May.
 				  </p>
-	        <p class="f6 lh-copy measure mt0-ns mb0 pb3 text">
-				    In terms of career aspirations, the path is unclear, but the ultimate 'lifestyle' destination
-				    is fairly clear: to be in a postion to help people and organizations in terms of data comprehension,
-				    analytics, and integrity, UI/UX design, and public policy. In a nutshell, she thinks it would be cool
-				    to be empowered to work on a product like the iPadOS, and also help with a local campaign/non-profit/small business/tech policy work
-				    with ease. You can take a look at my resume <a href="https://github.com/aditirajagopal/aditirajagopal/blob/master/src/components/Aditi%20Rajagopal%20Resume%20-%20Fall%202019.pdf">here</a>
-				  </p>
-	        <p class="f6 lh-copy measure mt0-ns mb0 text">
-	        	Also, I'm totally not an icefishing wunderkind. But I'd say I'm a pretty good artist.
-				  </p>
+				  <h2 class="f4 f3-m f2-l headers">fast facts</h2>
+			<dl class="lh-title mt0 text">
+			  <dt class="f6 b">How to Pronounciate My Name</dt>
+			  <dd class="ml0">/ah-dee-tee/ /rah-jah-go-paal/ (it's phonetic!)</dd>
+			  <dt class="f6 b mt2">Current Location</dt>
+			  <dd class="ml0">Charlottesville, VA</dd>
+			  <dt class="f6 b mt2">Hometown</dt>
+			  <dd class="ml0">West Bloomfield, MI</dd>
+			  <dt class="f6 b mt2">Myers Briggs</dt>
+			  <dd class="ml0">ENFP (Campaigner)</dd>
+			  <dt class="f6 b mt2">Strengths Finder Top 5</dt>
+			  <dd class="ml0">Empathy, Individualization, Strategic, Restorative, Achiever</dd>
+			  <dt class="f6 b mt2">Alumni of</dt>
+			  <dd class="ml0">University of Michigan (Go Blue!), IBM, University of Virginia, Transform Capital, Fin VC, CoderPad</dd>
+			  <dt class="f6 b mt2">Resume</dt>
+			  <dd class="ml0"><a href="https://drive.google.com/file/d/1k2UC3ZYE16dIHOPuDqmfgUNoUD_GbEhk/view?usp=sharing">Can be found here</a></dd>
+			</dl>
 				</article>
 		  </div>
 		  <div class="fl w-100 w-50-ns tc">
-				<div class="aspect-ratio aspect-ratio--3x4 mb4">
-					<Image imgName="sketchofme.png" />
-			  </div>
+			<div class="aspect-ratio aspect-ratio--3x4 mb4 pb4">
+			<DogAndMe />
+			<br/>
+			<iframe src="https://drive.google.com/file/d/1ALa2IL7-iR-VWs-LYHRpL98v3SA7-Ez7/preview" width="480" height="280"></iframe>
+			</div>
 		  </div>
 		</article>
   </Layout>

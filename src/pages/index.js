@@ -38,13 +38,13 @@ const IndexPage = () => (
       <div class="fl w-100 w-60-ns gray">
         <div style={{ paddingRight: `2rem` }}>
         <h2 class="f4 lh-title headers">
-          Midwest born and raised, software engineer and artist by practice
+          Midwest born and raised, aspiring VC, software engineer, data scientist and artist by practice
         </h2>
         <p class="f6 lh-copy measure mt0-ns mb0 text">
-          I'm currently a student at University of Virginia pursuing my MBA and Masters in Data Science (at the Darden School of Business & School of Data Science respectively). Prior to this, I was a sofware engineer at IBM for (almost) 5 years, working primarily on cloud infrastructure services -- most recently, the IBM Kubernetes Service on their UI/Design Team. I also served as Treasurer of the Society of Women Engineers Minnesota Professional Section for the FY18 & FY19 fiscal years.
+          I'm currently a student at University of Virginia pursuing my MBA and Masters in Data Science (at the Darden School of Business & School of Data Science respectively) graduating in May 2021! Prior to this, I was a sofware engineer at IBM for (almost) 5 years, working primarily on cloud infrastructure services -- most recently, the IBM Kubernetes Service on their UI/Design Team. I also served as Treasurer of the Society of Women Engineers Minnesota Professional Section for the FY18 & FY19 fiscal years.
         </p>
         <footer>
-          <time className="f7 mb2 dib ttu tracked mt3 light-gray"><small>Last Updated: July 2019</small></time>
+          <time className="f7 mb2 dib ttu tracked mt3 light-gray"><small>Last Updated: May 2021</small></time>
         </footer>
         </div>
       </div>
@@ -54,23 +54,21 @@ const IndexPage = () => (
           <div className="flex pa2 text">
             <span className="w2">💻</span>
             <span className="f6 lh-title ml3 pl2">
-              Academics: Bayesian ML, Data Mining, Ultimate Questions in Business, Project Management, Behavioral Decision Making
+              Academics: Societal Issues in Business, Deep Learning, General Managers Taking Action, Hot Topics in Analytics
             </span>
           </div>
           <div className="flex pa2 text">
-            <span className="w2">⛵️</span>
-            <span className="f6 lh-title ml3 pl2">Fin VC Fellowship</span>
+            <span className="w2">🔮</span>
+            <span className="f6 lh-title ml3 pl2">Currently: Product & Data Ops at CoderPad, Venture Fellow at AmplifyHer Ventures</span>
           </div>
           <div className="flex pa2 text">
             <span className="w2">📝</span>
-            <span className="f6 lh-title ml3 pl2">
-              Writing (stay tuned!!)
-            </span>
+            <span className="f6 lh-title ml3 pl2">In Progress: Final Exams & Papers, Beach week at OXB, Graduation (5/21-5/23)</span>
           </div>
         <b class="db f4 mb1 lh-copy ba bl-0 bt-0 br-0 bw-3 b--black-3 headers">On the Horizon</b>
           <div className="flex pa3 text">
             <span className="w2">🛠</span>
-            <span className="f6 lh-title ml3">Brainstorming events for: Data Science Club & EVC Club</span>
+            <Link className="f6 lh-title ml3 gray bg-animate hover-light-gray" to="/learningplan" title="Learning Plan">Working on Something New</Link>
           </div>
         </div>
         <footer class="tc-l">
