@@ -8,7 +8,6 @@ module.exports = {
     is pursuing her MBA and Masters in Data Science.`,
   },
   plugins: [
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-dark-mode`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
