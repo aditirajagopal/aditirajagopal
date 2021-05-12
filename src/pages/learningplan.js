@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import portfoliopdf from "../components/Aditi_Rajagopal_Portfolio.pdf"
 

@@ -13,12 +13,9 @@ import "./layout.css"
 import "./app.css"
 import portfoliopdf from "./Aditi_Rajagopal_Portfolio.pdf"
 
-export const fluidImage = graphql`
-fragment fluidImage on File {
+export const fluidImage = graphql`fragment fluidImage on File {
   childImageSharp {
-    fluid(maxWidth: 1000) {
-      ...GatsbyImageSharpFluid
-    }
+    gatsbyImageData(layout: FULL_WIDTH)
   }
 }
 `;

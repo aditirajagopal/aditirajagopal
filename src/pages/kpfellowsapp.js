@@ -3,17 +3,14 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import portfoliopdf from "../components/Aditi_Rajagopal_Portfolio.pdf"
 
 
-export const fluidImage = graphql`
-fragment fluidImage on File {
+export const fluidImage = graphql`fragment fluidImage on File {
   childImageSharp {
-    fluid(maxWidth: 1000) {
-      ...GatsbyImageSharpFluid
-    }
+    gatsbyImageData(layout: FULL_WIDTH)
   }
 }
 `;
@@ -118,7 +115,10 @@ const KPFellowsPage = (props) => (
 				packaging foreshadows the thoughtfulness of the game's questions with subtle messages like "Come Curious, Leave Connected" 
 				and "Inside we're all the same."
 			</p>
-		      <Img className="w-100 f3 measure dib" alt="Photo of WNRS game box" fluid={props.data.wnrs0.childImageSharp.fluid} />
+		      <GatsbyImage
+                  image={props.data.wnrs0.childImageSharp.gatsbyImageData}
+                  className="w-100 f3 measure dib"
+                  alt="Photo of WNRS game box" />
 			<p class="lh-copy text">
 				The WNRS Instagram account and text messaging platform transcend WNRS and create a bridge from the game into an 
 				immersive community. Through the Instagram account, Koreen shares her personal artwork and poses thought-provoking 
@@ -130,7 +130,10 @@ const KPFellowsPage = (props) => (
 				message courses (similar to Arist.co and The Nudge) to expand their offerings. This way, they can continue to grow 
 				the virtual counterpart of the physical product.
 			</p>
-	  	      <Img className="w-100 f3 measure dib" alt="Photo of WNRS game contents" fluid={props.data.wnrs1.childImageSharp.fluid} />
+	  	      <GatsbyImage
+                  image={props.data.wnrs1.childImageSharp.gatsbyImageData}
+                  className="w-100 f3 measure dib"
+                  alt="Photo of WNRS game contents" />
 			<p class="lh-copy text">
 				The expansion packs for the card game started with topics like dating (in collaboration with Bumble) but have 
 				since expanded to be more timely topics such as BLM and the 2020 election. Considering the importance of the topics, I

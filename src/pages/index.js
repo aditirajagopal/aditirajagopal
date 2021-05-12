@@ -1,25 +1,26 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 
 const Profile = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "profile.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+  const data = useStaticQuery(graphql`{
+  placeholderImage: file(relativePath: {eq: "profile.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 300, layout: CONSTRAINED)
     }
-  `)
+  }
+}
+`)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} className="dib w4 h4 br-100 ml4" />
+  return (
+    <GatsbyImage
+      image={data.placeholderImage.childImageSharp.gatsbyImageData}
+      className="dib w4 h4 br-100 ml4" />
+  );
 }
 
 const IndexPage = () => (

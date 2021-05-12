@@ -1,25 +1,26 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Image from "../components/image"
 
 const DogAndMe = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "dog_and_me.JPG" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+  const data = useStaticQuery(graphql`{
+  placeholderImage: file(relativePath: {eq: "dog_and_me.JPG"}) {
+    childImageSharp {
+      gatsbyImageData(width: 300, layout: CONSTRAINED)
     }
-  `)
+  }
+}
+`)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} class="aspect-ratio--object cover" />
+  return (
+    <GatsbyImage
+      image={data.placeholderImage.childImageSharp.gatsbyImageData}
+      class="aspect-ratio--object cover" />
+  );
 }
 
 const AboutPage = () => (
