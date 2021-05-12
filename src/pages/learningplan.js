@@ -25,6 +25,10 @@ const LearningPlanPage = (props) => (
 			<ul class="list pl0">
 			  <li class="pa1 pa2-ns bb b--black-10">
 			    <b class="db f3 mb1">Business Analytics</b>
+			    <p>During my time at CoderPad I had the opportunity to take deep dive into the company's product, financial, and marketing data. Though I was able to
+			       put into practice much of my learnings from the dual degree program, I found that there were a lot of practical and tactical gaps in my knowledge of 
+			       business analytics. Though the following courses and resources, I'm hoping to build out some of these skills:
+			    </p>
 			    <span class="f5 db lh-copy measure">
 			    <li>https://www.coursera.org/lecture/strategic-business-analytics/using-classification-and-regression-techniques-to-forecast-5Bbwg</li>
 				<li>https://github.com/poteto/hiring-without-whiteboards</li>
@@ -39,6 +43,9 @@ const LearningPlanPage = (props) => (
 			    <b class="db f3 mb1">
 			      Data Science
 			    </b>
+			    <p>Data Science is a rapidly evolving field, and though I'm coming away with a masters degree, I know that I could brush up on the curriculum from the fall term
+			    (particularly Bayesian ML and Data Mining), and there is so much more to learn on the ML Ops and CS side. It would be great to build out some practical applications of ML in the process.   
+			    </p>
 			    <span class="f5 db lh-copy measure">
 			    <li>Data Science for Business by Foster Provost & Tom Fawcett</li>
 			    <li>FastAI Introduction to Deep Learning - https://github.com/fastai/fastbook, https://course.fast.ai/videos/?lesson=1</li>
@@ -67,6 +74,16 @@ const LearningPlanPage = (props) => (
 			    </b>
 			    <span class="f5 db lh-copy measure">
 			      <li>The Art of Self Coaching - https://www.edbatista.com/the-art-of-self-coaching-public-course.html</li>
+			      <li>https://kellblog.com/2015/03/08/career-development-what-it-really-means-to-be-a-manager-director-or-vp/</li>
+			      <li>Ritual Design - https://medium.com/ritual-design/introducing-ritual-design-meaning-purpose-and-behavior-change-44d26d484edf</li>
+			    </span>
+			  </li>
+			  <li class="pa1 pa2-ns bb b--black-10">
+			    <b class="db f3 mb1">
+			      Things to Build 
+			    </b>
+			    <span class="f5 db lh-copy measure">
+			      <li>No Code Solutions & Rapid Prototyping - https://learningnocode.com/, https://zeroqode.com/zerocodeconf, https://www.nocode.mba/sign-up</li>
 			      <li>https://kellblog.com/2015/03/08/career-development-what-it-really-means-to-be-a-manager-director-or-vp/</li>
 			      <li>Ritual Design - https://medium.com/ritual-design/introducing-ritual-design-meaning-purpose-and-behavior-change-44d26d484edf</li>
 			    </span>
