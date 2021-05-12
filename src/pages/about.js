@@ -10,7 +10,7 @@ const DogAndMe = () => {
   const data = useStaticQuery(graphql`{
   placeholderImage: file(relativePath: {eq: "dog_and_me.JPG"}) {
     childImageSharp {
-      gatsbyImageData(width: 300, layout: CONSTRAINED)
+      gatsbyImageData(width: 480, height: 600, layout: CONSTRAINED)
     }
   }
 }
@@ -19,7 +19,7 @@ const DogAndMe = () => {
   return (
     <GatsbyImage
       image={data.placeholderImage.childImageSharp.gatsbyImageData}
-      class="aspect-ratio--object cover" />
+      class="" />
   );
 }
 
@@ -57,6 +57,7 @@ const AboutPage = () => (
 		  <div class="fl w-100 w-50-ns tc">
 			<div class="aspect-ratio aspect-ratio--3x4 mb4 pb4">
 			<DogAndMe />
+			<br/>
 			<br/>
 			<iframe src="https://drive.google.com/file/d/1ALa2IL7-iR-VWs-LYHRpL98v3SA7-Ez7/preview" width="480" height="280"></iframe>
 			</div>
