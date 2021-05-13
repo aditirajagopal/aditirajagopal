@@ -37,6 +37,7 @@ const LearningPlanPage = (props) => (
 				<li>https://www.linkedin.com/learning/tableau-essential-training-2020-1/apply-the-power-of-tableau-2020-to-your-data</li>
 				<li>https://clevertap.com/blog/cohort-analysis/</li>
 				<li>https://www.coursera.org/professional-certificates/google-data-analytics#courses</li>
+				<li>Excel, R and Python Resources - https://starttechacademy.com/free-r-and-python-resources/</li>
 				</span>
 			  </li>
 			  <li class="pa1 pa2-ns bb b--black-10">
@@ -50,7 +51,8 @@ const LearningPlanPage = (props) => (
 			    <li>Data Science for Business by Foster Provost & Tom Fawcett</li>
 			    <li>FastAI Introduction to Deep Learning - https://github.com/fastai/fastbook, https://course.fast.ai/videos/?lesson=1</li>
 				<li>Forecasting: Principles and Practice - https://otexts.com/fpp3/</li>
-			    <li>ML Crash Course - https://developers.google.com/machine-learning/crash-course</li>
+				<li>Amazon's ML University - https://www.amazon.science/latest-news/amazon-machine-learning-university-launches-new-advanced-course?_lrsc=375e9966-1c16-423c-9cf1-23520091c436&SMLIDE0198B, https://www.youtube.com/channel/UC12LqyqTQYbXatYS9AA7Nuw/videos</li>
+			    <li>Google's ML Crash Course - https://developers.google.com/machine-learning/crash-course</li>
 			    <li>Google's Python Class - https://developers.google.com/edu/python</li>
 			    <li>Python For MBAs - https://www.amazon.com/dp/B087T2KMDL</li>
 			    <li>Women Who Code ML Course - https://www.youtube.com/playlist?list=PLVcEZG2JPVhfK8MnBqcxAzwMIfpH0XpX9</li>
