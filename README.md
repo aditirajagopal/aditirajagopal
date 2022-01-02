@@ -9,13 +9,13 @@ The longer spiel: I’m currently an associate at Invest Detroit Ventures, where
 
 
 #### 🌱 Things I am currently working on: 
-- Making this personal site the best it can be  
+- Making my personal site the best it can be (check out the v7 repo)
 - Internet audit - what do I have out there, what can be cleaned up, and what can be revamped
 - Putting together learning goals and a personal learning plan for Q1  
 
 #### :muscle: Things I am challenging myself to do:
 - Lifestyle audit and improvements 
-- Doing a little more coding and learning on a weekly if not daily basis 
+- Doing a little more coding and learning on a weekly if not daily basis (more data science! gotta make use of coursera and udemy!)
 - Put myself out there a bit more
 
 ### 💡 Goals for 2022:
