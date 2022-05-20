@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Aditi Rajagopal <ar5vt@virginia.edu>",
   "dependencies": {
+    "autoprefixer": "^10.0.2",
     "gatsby": "^2.32.13",
     "gatsby-cli": "^2.12.36",
     "gatsby-image": "^3.5.0",
@@ -24,7 +25,8 @@
     "gatsby-source-filesystem": "^2.0.43",
     "gatsby-transformer-remark": "^2.3.8",
     "gatsby-transformer-sharp": "^2.12.1",
-    "postcss": "^8.2.15",
+    "postcss": "^8.1.7",
+    "postcss-loader": "^4.0.4",
     "postcss-browser-reporter": "^0.5.0",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^14.0.2",
@@ -33,7 +35,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "tachyons-cli": "^1.3.3"
+    "tachyons-cli": "^1.3.3",
+    "webpack": "^4.44.2"
   },
   "devDependencies": {
     "prettier": "^1.18.2",
